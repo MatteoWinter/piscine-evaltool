@@ -9,7 +9,7 @@ PROJECT=C42
 REPOPROJECT=git@vogsphere.42lausanne.ch:vogsphere/YOURPROJECTREPO
 
 # EVALTOOL FILES
-REPOEVALTOOL=https://github.com/MatteoWinter/piscine-evaltool.git
+REPOEVALTOOL=https://github.com/thewinterman/piscine-evaltool.git
 TMPCLONE=~/goinfre/evaltools-tmp
 
 # READ THE FILE BEFORE MESSING WITH THIS ;)
