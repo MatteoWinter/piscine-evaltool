@@ -1,6 +1,10 @@
 #include "ft_strlcpy.c"
 #include <stdio.h>
-#include <string.h>
+#ifdef __linux__
+	#include <bsd/string.h>
+#elif __APPLE__
+	#include <string.h>
+#endif
 
 int test_1(void)
 {
@@ -24,7 +28,8 @@ int test_2(void)
 {
 	// original function for output check
 	// add -lbsd , or the more portable $(pkg-config --libs libbsd) , to your gcc command line to link the library
-	
+	// gcc -o a.out main.c -lbsd (DEBIAN)
+	// https://stackoverflow.com/questions/67360010/undefined-reference-to-strlcpy-and-strlcat
 	printf("-- strlcpy --\n");
 
 	unsigned int	size_0 = 10;
