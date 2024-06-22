@@ -11,8 +11,8 @@
 
 void test_1(int i)
 {
-	char str1[4][500] = {"01231451242345234523411234","145484515684","a towel has immense psychological value","10a010"};
-	char str2[4][500] = {"2341","0","psy","9"};
+	char str1[5][500] = {"01231451242345234523411234","145484515684","a towel has immense psychological value","10a010","s2isempty"};
+	char str2[5][500] = {"2341","0","psy","9",""};
 
 	printf("-- strstr --\n");
 	printf("haystack : %s\nneedle : %s\n", str1[i], str2[i]);
@@ -21,8 +21,8 @@ void test_1(int i)
 
 void test_2(int i)
 {
-	char str1[4][500] = {"01231451242345234523411234","145484515684","a towel has immense psychological value","10a010"};
-	char str2[4][500] = {"2341","0","psy","9"};
+	char str1[5][500] = {"01231451242345234523411234","145484515684","a towel has immense psychological value","10a010","s2isempty"};
+	char str2[5][500] = {"2341","0","psy","9",""};
 
 	printf("-- ft_strstr --\n");
 	printf("haystack : %s\nneedle : %s\n", str1[i], str2[i]);
@@ -31,7 +31,7 @@ void test_2(int i)
 
 int main (void)
 {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		test_1(i);
 		test_2(i);
